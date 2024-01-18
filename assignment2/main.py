@@ -20,7 +20,9 @@ def is_palyndrom():
 
 def check_string_if_palyndrom(string):
     for i in string:
-        d.append(i)
+        if i == ' ':
+            continue
+        d.append(i.casefold())
     return is_palyndrom()
 
 
